@@ -1,0 +1,28 @@
+{
+  "name": "colorize",
+  "version": "1.0.0",
+  "description": "Ponnle color a tus textos de consola",
+  "main": "colorize.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexito-Hub/colorize.git"
+  },
+  "keywords": [
+    "color",
+    "colorize",
+    "terminal",
+    "consola",
+    "console",
+    "colorize-terminal",
+    "colorize-console"
+  ],
+  "author": "iam.-zioo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexito-Hub/colorize/issues"
+  },
+  "homepage": "https://github.com/Alexito-Hub/colorize#readme"
+}
