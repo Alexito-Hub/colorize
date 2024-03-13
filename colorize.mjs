@@ -1,5 +1,4 @@
-// colorize.js
-const { applyColor } = require('./colors');
+import { applyColor } from './colors/colors.mjs';
 
 const colorize = {
     black: (text, background) => applyColor('black', text, [], background),
@@ -27,4 +26,4 @@ const colorize = {
     strike: (text, background) => applyColor('strike', text, [], background),
 };
 
-module.exports = colorize;
+export default colorize;
