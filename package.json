@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "Ponnle color a tus textos de consola",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com"
   },
   "main": "colorize.cjs",
   "module": "colorize.mjs",
