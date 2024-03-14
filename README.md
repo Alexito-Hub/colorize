@@ -4,16 +4,16 @@ Esta librería proporciona una manera fácil de aplicar colores y estilos al tex
 
 ## Instalación
 
-Para instalar la librería, puedes usar npm o yarn:
+Puedes instalar la librería utilizando npm:
 
 ```bash
 npm install --save colorize-console
 ```
 
-o
+También puedes clonar el repositorio desde GitHub y usarlo directamente:
 
 ```bash
-yarn add colorize-console
+git clone https://github.com/Alexito-Hub/colorize-console.git
 ```
 
 ## Uso
@@ -21,6 +21,10 @@ yarn add colorize-console
 Para utilizar la librería, primero debes importar el módulo `colorize`:
 
 ```javascript
+// Para ES Module
+import colorize from 'colorize-console';
+
+// Para CommonJS
 const colorize = require('colorize-console');
 ```
 
@@ -107,3 +111,11 @@ Ejemplo:
 console.log(colorize.custom('Texto con color personalizado', 255, 0, 0)); // Rojo
 console.log(colorize.rgb('Texto con color RGB', 0, 255, 0)); // Verde
 ```
+
+## Documentación Completa
+
+Para consultar la documentación completa, visita [unknown/colorize-console-docs](unknown/colorize-console-docs).
+
+## Soporte
+
+Si necesitas ayuda o tienes alguna pregunta sobre la librería, por favor visita [unknown](unknown) o contáctanos en iamzio.outlook.com.
