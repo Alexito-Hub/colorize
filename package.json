@@ -1,6 +1,6 @@
 {
   "name": "colorize-console",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Ponnle color a tus textos de consola",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
