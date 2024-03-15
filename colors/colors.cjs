@@ -1,4 +1,4 @@
-module.exports = function applyColor(color = '', text, args = [], background = '') {
+function applyColor(color = '', text, args = [], background = '') {
     const colors = {
         black: '\x1b[30m',
         red: '\x1b[31m',
@@ -71,3 +71,5 @@ module.exports = function applyColor(color = '', text, args = [], background = '
         return `${colorCode}${backgroundCode}${text}${reset}`;
     }
 }
+
+module.exports = applyColor

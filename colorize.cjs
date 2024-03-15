@@ -1,4 +1,4 @@
-const { applyColor } = require('./colors/colors.cjs');
+const applyColor = require('./colors/colors.cjs');
 
 const colorize = {
     black: (text, background) => applyColor('black', text, [], background),
