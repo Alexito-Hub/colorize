@@ -24,6 +24,10 @@ const colorize = {
     underline: (text, background) => applyColor('underline', text, [], background),
     inverse: (text, background) => applyColor('inverse', text, [], background),
     strike: (text, background) => applyColor('strike', text, [], background),
+    keyword: (color) => {
+        const colorCode = `\x1b[38;2;${color[0]};${color[1]};${color[2]}m`;
+        return (text) => `${colorCode}${text}\x1b[0m`;
+    },
 };
 
 export default colorize;
