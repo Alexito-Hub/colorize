@@ -4,6 +4,7 @@ const colorize = {
     black: (text, background) => applyColor('black', text, [], background),
     red: (text, background) => applyColor('red', text, [], background),
     green: (text, background) => applyColor('green', text, [], background),
+    gray: (text) => applyColor('gray', text),
     yellow: (text, background) => applyColor('yellow', text, [], background),
     blue: (text, background) => applyColor('blue', text, [], background),
     magenta: (text, background) => applyColor('magenta', text, [], background),
