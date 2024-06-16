@@ -1,13 +1,10 @@
 {
   "name": "colorize-console",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "description": "Ponnle color a tus textos de consola",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "colorize.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js"
+    "test": "test.js"
   },
   "repository": {
     "type": "git",
@@ -27,11 +24,5 @@
   "bugs": {
     "url": "https://github.com/Alexito-Hub/colorize/issues"
   },
-  "homepage": "https://github.com/Alexito-Hub/colorize#readme",
-  "devDependencies": {
-    "typescript": "^5.4.5"
-  },
-  "dependencies": {
-    "@types/node": "^20.14.2"
-  }
+  "homepage": "https://github.com/Alexito-Hub/colorize#readme"
 }
