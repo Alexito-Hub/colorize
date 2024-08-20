@@ -1,16 +1,17 @@
-import applyColor, { Color, Background, Bg } from './color.default';
+import Coloring from './utils';
+import { Color, Background, Bg } from './enums'
 
 type ColorType = keyof typeof Color;
 type BackgroundType = keyof typeof Background;
 
-function createBackgroundMethods(color: ColorType) {
-    const backgroundMethods: { [key in BackgroundType]?: () => string } = {};
-    Object.keys(Bg).forEach((bgMethod) => {
-        const methodName = bgMethod as keyof typeof Bg;
-        const backgroundKey = methodName.replace('Bg', '') as keyof typeof Background;
-        backgroundMethods[backgroundKey] = () => applyColor(color, '', [], backgroundKey);
+function create(color: ColorType) {
+    const methods: { [key in BackgroundType]?: () => string } = {};
+    Object.keys(Bg).forEach((bg) => {
+        const name = bg as keyof typeof Bg;
+        const key = name.replace('Bg', '') as keyof typeof Background;
+        methods[key] = () => applyColor(color, '', [], key);
     });
-    return backgroundMethods;
+    return methods;
 }
 
 export const colorize: { [key in ColorType]: { [key in BackgroundType]?: () => string } & { (text?: string, background?: BackgroundType): string } } = {} as any;
@@ -18,6 +19,6 @@ export const colorize: { [key in ColorType]: { [key in BackgroundType]?: () => s
 for (const color of Object.keys(Color)) {
     colorize[color as ColorType] = Object.assign(
         (text: string = '', background?: BackgroundType) => applyColor(color as ColorType, text, [], background),
-        createBackgroundMethods(color as ColorType)
-    );
+        create(color as ColorType)
+    )
 }
